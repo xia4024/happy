@@ -1,0 +1,23 @@
+install Java in CentOs7
+
+cd /usr/local/
+
+mkdir /usr/local/java/
+
+tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/local/java/
+
+vim /etc/profile
+copy and paste -------------------------------
+export JAVA_HOME=/usr/local/java/jdk1.8.0_181
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+copy and paste ------------------------------
+
+
+source /etc/profile
+
+ln -s /usr/local/java/jdk1.8.0_181/bin/java /usr/bin/java
+
+java -version
+
