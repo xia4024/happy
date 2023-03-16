@@ -1,0 +1,8 @@
+uname -a
+
+根据进程名查端口号
+ps -ef|grep redis
+
+根据pid查进程
+1. cat /proc/$PID/cmdline
+2. ll /proc/$PID
