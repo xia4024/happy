@@ -1,1 +1,27 @@
 
+download redis-5.0.7.tar.gz
+
+mkdir /usr/local/redis
+
+tar -zvxf redis-5.0.7.tar.gz /usr/local/redis
+cd usr/local/redis/redis-5.0.7
+make
+
+
+###########################
+vim redis.conf
+# bind 127.0.0.1
+requirepass yourpassword
+daemonized no
+protected-mode no
+###########################
+
+
+###############################
+redis-cli -h yourIp -p yourPort//启动redis客户端，并连接服务器
+auth youpassword
+#################################
+
+
+####################################redis-server path/redis.conf
+./bin/redis-server ./redis-5.0.7/redis.conf
