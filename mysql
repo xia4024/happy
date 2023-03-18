@@ -1,0 +1,19 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'shanshan@123';
+You must reset your password using ALTER USER statement before executing this statement.
+flush privileges;
+
+systemctl start  mysqld.service
+ systemctl status mysqld.service
+
+ mysql -uroot -p
+
+ SHOW VARIABLES LIKE 'validate_password%';
+ 
+ 
+  grant all privileges on *.* to 'root'@'%' identified by 'SHANshan@123' with grant option;
+
+etstat –anlp | grep 3306
+ yum install -y net-tools
+
+
+nohup java -jar v-im-server-3.8.1.jar > log.file 2>&1 &
