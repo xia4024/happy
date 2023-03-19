@@ -13,3 +13,5 @@ grep -n string file_name
 nl file_name | set -n  '/pass/p'
 
 less string  ####n下一个；N上一个
+
+cp /local/ /newlocal/
