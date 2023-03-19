@@ -1,2 +1,2 @@
-# happy
-for happiness
+# happy work
+work for happiness
